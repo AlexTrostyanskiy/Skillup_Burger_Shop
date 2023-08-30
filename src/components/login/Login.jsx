@@ -1,15 +1,26 @@
 import React, { useState } from "react"; import {
-    MDBContainer, MDBTabs, MDBTabsItem, MDBTabsLink, MDBTabsContent, MDBTabsPane, MDBBtn,
-    MDBIcon, MDBInput, MDBCheckbox,
+    MDBContainer, 
+    MDBTabs, 
+    MDBTabsItem, 
+    MDBTabsLink, 
+    MDBTabsContent, 
+    MDBTabsPane, 
+    MDBBtn,
+    MDBIcon, 
+    MDBInput, 
+    MDBCheckbox,
 } from "mdb-react-ui-kit";
+
 function Login() {
     const [justifyActive, setJustifyActive] = useState("tab1");
+
     const handleJustifyClick = (value) => {
         if (value === justifyActive) {
             return;
         }
         setJustifyActive(value);
     };
+
     return (
         <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
             <MDBTabs pills justify
@@ -128,4 +139,5 @@ function Login() {
         </MDBContainer>
     );
 }
+
 export default Login;

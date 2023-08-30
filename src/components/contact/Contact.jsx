@@ -1,5 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion"; import burger from "../../assets/burger2.png"; import Popup from 'reactjs-popup';
+import { motion } from "framer-motion"; 
+import burger from "../../assets/burger2.png"; 
+import Popup from 'reactjs-popup';
+
 const Contact = () => {
     return (
         <section className="contact">
@@ -52,4 +55,5 @@ const Contact = () => {
         </section>
     );
 };
+
 export default Contact;

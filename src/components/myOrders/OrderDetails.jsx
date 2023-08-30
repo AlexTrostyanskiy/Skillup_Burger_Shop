@@ -1,4 +1,5 @@
 import React from "react";
+
 const OrderDetails = () => {
     return (
         <section className="orderDetails">
@@ -107,4 +108,5 @@ const OrderDetails = () => {
         </section>
     );
 };
+
 export default OrderDetails;

@@ -21,7 +21,7 @@ const Shipping = () => {
           <div>
             <label>Country</label>
             <select>
-              <option value="">Country</option>
+              <option value="">India</option>
               {Country && Country.getAllCountries().map((i) => (
                 <option value="{i.isoCode}" key="{i.isoCode}">
                   {i.name}
@@ -33,7 +33,7 @@ const Shipping = () => {
           <div>
             <label>State</label>
             <select>
-              <option value="">State</option>
+              <option value="">Delhi</option>
               {State && State.getStatesOfCountry("IN").map((i) => (
                 <option value="{i.isoCode}" key="{i.isoCode}">
                   {i.name}
