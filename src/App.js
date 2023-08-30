@@ -5,12 +5,9 @@ import Header from "./components/layout/Header";
 import Contact from "./components/contact/Contact";
 import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
-
-
 import Login from "./components/login/Login";
 import Profile from "./components/profile/Profile";
-// Add module imports for MY ORDERS
-
+import MyOrders from "./components/myOrders/MyOrders";
 import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
 
@@ -42,8 +39,7 @@ function App() {
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
-         //           Add the Route for MY ORDERS
-
+        <Route path="/myorders" element={<MyOrders />} />
         <Route path="/order/:id" element={<OrderDetails />} />
 
 
